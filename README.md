@@ -7,8 +7,10 @@ In this work, we develop methods for single image super-resolution where large d
 
 # Result
 ![plot](https://github.com/innanliu426/EnsemNet/miralon_result.png?raw=true)
+![GitHub Logo](/miralon_result.png)
+
 
 ### training data on ordinary images
-training and testing sample Jupyter notebook see sample_notebook.ipny
+training and testing sample Jupyter notebook see sample_notebook.ipynb
 ### training data on ordinary images
 down load DIV2K images from https://data.vision.ee.ethz.ch/cvl/DIV2K/

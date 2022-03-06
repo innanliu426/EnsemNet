@@ -6,7 +6,6 @@ In this work, we develop methods for single image super-resolution where large d
 ![The architecture for the ensemble method in both the space domain and the wavelet transform domain. Two algorithms are performed on the space representation and the multi-channel wavelet representation separately. Then the outcomes are combined by element-wise addition. Finally, the output is refined by an extra convolutional layer.](frame.png)
 
 # Result
-![plot](https://github.com/innanliu426/EnsemNet/miralon_result.png?raw=true)
 ![Reconstructed beta transmission areal density maps by the proposed algorithm for Miralon sheets from the production line. Details for uneven density distribution are recovered.](miralon_result.png)
 
 

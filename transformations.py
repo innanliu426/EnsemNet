@@ -45,28 +45,3 @@ def irbio(dwt):
     return pywt.idwt2((cA, (cH, cV, cD)), 'rbio6.8') 
     
     
-def psnr(hr,lr):
-    mse_ = mse(hr,lr)
-    if mse_ == 0.:
-        psnr = 100
-    else:
-        psnr = 20 * np.log10(hr.max() / np.sqrt(mse_))
-    return psnr 
-
-def mse(x,y):
-    return np.mean((y-x)**2)
-
-def transx(x, g):
-    fftx=[]
-    for i in range(len(x)):
-        trans = g(x[i])
-        fftx.append(trans)
-    return fftx
-
-def transback(x, ig):
-    length = x.shape[0]
-    shaper, shapec = ig(x[0,:,:,0]).shape
-    y = np.zeros((length,shaper, shapec,1))
-    for i in range(length):
-        y[i,:,:,0] = ig(x[i,:,:,0])
-    return y

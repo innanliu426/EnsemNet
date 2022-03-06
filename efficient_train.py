@@ -1,4 +1,3 @@
-import * from test.py
 from keras.callbacks import EarlyStopping
 usualCallback = EarlyStopping()
 overfitCallback = EarlyStopping(monitor='loss', mode='min', min_delta=0.05, patience = 2)

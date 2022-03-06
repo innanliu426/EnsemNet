@@ -4,8 +4,8 @@ In this work, we develop methods for single image super-resolution where large d
 
 # Contribution
 Herein we demonstrate how an ensemble model achieves a robust optimal result for various types of compressive models from small training data sets with the help of different transform domains. Bechmark algorithims SRResNet, EDSR and RCAN are utilized as basic image processors. We propose an ensemble CNN which assembles multiple basic image processors in different representation domains for an optimal combined result. We call this ensemble sparse model EnsemNet. Taking advantages from multiple representation domains, our model stands apart from previous algorithms by adapting different small training sets. The advantage of our model is demonstrated through the comparison among individual image super-resolution CNNs in single transform domains and the ensemble model. Our work is novel in three ways.
-## First, our method provides a general solution for the image super-resolution problem on diverse and complex compressive models in real-world applications.
+#### First, our method provides a general solution for the image super-resolution problem on diverse and complex compressive models in real-world applications.
 
-## Second, the optimal performance is stable over different selections of small training data sets.
+#### Second, the optimal performance is stable over different selections of small training data sets.
 
-## Third, based upon advantageous properties of sparsifying transform domains, our ensemble model combines the results from different domains to provide a robust solution from insufficient training data sets. 
+#### Third, based upon advantageous properties of sparsifying transform domains, our ensemble model combines the results from different domains to provide a robust solution from insufficient training data sets. 

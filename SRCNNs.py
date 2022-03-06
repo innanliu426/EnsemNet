@@ -5,6 +5,12 @@ from tensorflow.keras.layers import Input, Conv2D, MaxPooling2D, UpSampling2D, F
 from tensorflow.keras.layers import Dense, Concatenate, Add, Lambda, Reshape, Dropout, LeakyReLU, Conv2DTranspose
 from wavetf import WaveTFFactory
 
+
+input_r, input_c = 12, 12
+scale = 4
+show_step = 10
+input_shape = (input_r, input_c)
+
 ################ basic EDSR ################
 def edsr(x_in, scale, num_filters=64, num_res_blocks=8, res_block_scaling=0.1):
     x = b = Conv2D(num_filters, 3, padding='same')(x_in)

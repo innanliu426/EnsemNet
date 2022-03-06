@@ -10,7 +10,7 @@ The architecture for the ensemble method in both the space domain and the wavele
 ![Reconstructed beta transmission areal density maps by the proposed algorithm for Miralon sheets from the production line. Details for uneven density distribution are recovered.](miralon_result.PNG)
 Reconstructed beta transmission areal density maps by the proposed algorithm for Miralon sheets from the production line. Details for uneven density distribution are recovered.
 
-### training data on ordinary images
-training and testing sample Jupyter notebook see sample_notebook.ipynb
-### training data on ordinary images
-down load DIV2K images from https://data.vision.ee.ethz.ch/cvl/DIV2K/
+### train and test on ordinary images
+Training and testing sample Jupyter notebook see sample_notebook.ipynb
+
+Down load DIV2K images from https://data.vision.ee.ethz.ch/cvl/DIV2K/

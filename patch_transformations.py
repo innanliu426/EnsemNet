@@ -1,6 +1,10 @@
 ############### from list of image patches to transformed tensors
 import numpy as np
 
+input_r, input_c = 12, 12
+scale = 4
+show_step = 10
+input_shape = (input_r, input_c)
 
 def transx(x, g):
     fftx=[]

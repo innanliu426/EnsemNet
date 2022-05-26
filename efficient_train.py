@@ -8,7 +8,7 @@ def efficienct_train(models, x_train, y_train, epoch_count, lower_bound, \
     while ((lower_bound >=lower_bound_min) and (epoch_count<=max_epoch)):
         train = models.fit(x_train, y_train, batch_size=32,epochs=10,verbose=1, shuffle=True, callbacks=[overfitCallback])
         if epoch_count%25 == 0:
-            ####### avoid overtrain, stop when testing psnr drops
+            ####### avoid overtrain, stop when testing/crossvalidation psnr drops
             if train.history['loss'][-1] < marker:
                 list_files_HR = glob(os.path.join(validate_file_loc, "*.png"))
                 p = predict_this_set(models,list_files_HR[1:4], version = version, remainder=2) 
